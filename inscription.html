@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription/Réclamation</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="acceuil.html">Missions Militaires</a></li>
+            <li><a href="inscription.html">Inscription/Réclamation</a></li>
+            <li><a href="equipement.html">Équipements Militaires</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Formulaire d'inscription ou réclamation</h1>
+        <form action="post" enctype="application/x-www-form-urlencoded">
+            <label for="nom">Nom:</label>
+            <input type="text" name="nom" id="nom"><br><br>
+            <label for="prenom">Prénom:</label>
+            <input type="text" name="prenom" id="prenom"><br><br>
+            <label for="grade">Grade :</label>
+            <select id="grade" name="grade">
+                <option value="soldat">Soldat</option>
+                <option value="caporal">Caporal</option>
+                <option value="sergent">Sergent</option>
+                <option value="sergent_major">Sergent-Major</option>
+                <option value="adjudant">Adjudant</option>
+                <option value="adjudant_chef">Adjudant-Chef</option>
+                <option value="lieutenant">Lieutenant</option>
+                <option value="capitaine">Capitaine</option>
+                <option value="commandant">Commandant</option>
+                <option value="colonel">Colonel</option>
+                <option value="général">Général</option>
+            </select><br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email"><br><br>
+            <label for="text">Message:</label><br>
+            <textarea name="text" id="text"></textarea><br><br>
+            <label for="choisirFichier">Joindre un fichier :</label>
+            <input type="file" id="choisirFichier" name="fichier" accept=".jpg, .jpeg, .png"> <br><br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </main>
+</body>
+
+</html>
